@@ -4,8 +4,9 @@ version = "0.2.1"
 edition = "2021"
 
 [dependencies]
-rocket = "0.5.0-rc.2"
+rocket = { version = "0.5.0-rc.2", features = ["json"] }
 espflash = { rev = "55bce336c6718c1c7f019e4da718f97c8cdf1b95", git = "https://github.com/esp-rs/espflash" }
 clap = { version = "4.1.4", features = ["env", "derive"] }
 opener = "0.5.2"
 anyhow = "1.0.69"
+serde = { version = "1.0", features = ["derive"] }
